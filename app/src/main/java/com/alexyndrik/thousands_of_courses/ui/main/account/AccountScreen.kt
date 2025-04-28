@@ -3,9 +3,13 @@ package com.alexyndrik.thousands_of_courses.ui.main.account
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.systemBars
+import androidx.compose.foundation.layout.windowInsetsBottomHeight
+import androidx.compose.foundation.layout.windowInsetsTopHeight
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -43,8 +47,8 @@ fun AccountScreen(
             .background(color = colorResource(com.alexyndrik.common.R.color.black))
             .padding(horizontal = 16.dp)
     ) {
-
-        Spacer(modifier = Modifier.height(56.dp))
+        Spacer(Modifier.windowInsetsTopHeight(WindowInsets.systemBars))
+        Spacer(modifier = Modifier.height(16.dp))
 
         Text(
             modifier = Modifier.align(Alignment.CenterHorizontally),
@@ -67,8 +71,8 @@ fun AccountScreen(
             textAlign = TextAlign.Center
         )
 
-        Spacer(Modifier.height(120.dp))
-
+        Spacer(Modifier.height(96.dp))
+        Spacer(Modifier.windowInsetsBottomHeight(WindowInsets.systemBars))
     }
 
 }

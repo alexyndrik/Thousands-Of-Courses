@@ -7,11 +7,15 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.systemBars
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.windowInsetsBottomHeight
+import androidx.compose.foundation.layout.windowInsetsTopHeight
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -59,13 +63,15 @@ fun LoginScreen(
             .background(color = colorResource(id = com.alexyndrik.common.R.color.black))
     ) {
 
+        Spacer(Modifier.windowInsetsTopHeight(WindowInsets.systemBars))
+
         Column(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(horizontal = 16.dp)
         ) {
 
-            Spacer(modifier = Modifier.height(140.dp))
+            Spacer(modifier = Modifier.height(100.dp))
 
             Text(
                 text = stringResource(id = R.string.login),
@@ -175,6 +181,8 @@ fun LoginScreen(
             }
 
         }
+
+        Spacer(Modifier.windowInsetsBottomHeight(WindowInsets.systemBars))
 
     }
 

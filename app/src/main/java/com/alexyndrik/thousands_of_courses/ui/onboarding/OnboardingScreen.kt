@@ -4,11 +4,15 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.systemBars
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.windowInsetsBottomHeight
+import androidx.compose.foundation.layout.windowInsetsTopHeight
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -32,8 +36,8 @@ fun OnboardingScreen(
             .fillMaxSize()
             .background(colorResource(id = com.alexyndrik.common.R.color.black))
     ) {
-
-        Spacer(modifier = Modifier.height(140.dp))
+        Spacer(Modifier.windowInsetsTopHeight(WindowInsets.systemBars))
+        Spacer(modifier = Modifier.height(100.dp))
 
         Text(
             modifier = Modifier
@@ -63,6 +67,7 @@ fun OnboardingScreen(
             onFinished
         )
 
-        Spacer(modifier = Modifier.padding(bottom = 56.dp))
+        Spacer(modifier = Modifier.padding(bottom = 16.dp))
+        Spacer(Modifier.windowInsetsBottomHeight(WindowInsets.systemBars))
     }
 }

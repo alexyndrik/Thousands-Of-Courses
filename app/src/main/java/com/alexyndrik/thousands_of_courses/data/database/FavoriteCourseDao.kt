@@ -13,7 +13,10 @@ interface FavoriteCourseDao {
     fun addToFavorites(course: FavoriteCourseEntity)
 
     @Delete
-    fun removeFromFavorites(course: FavoriteCourseEntity)
+    fun removeAllFromFavorites(course: FavoriteCourseEntity)
+
+    @Query("DELETE FROM favorites")
+    fun removeAllFromFavorites()
 
     @Query("SELECT * FROM favorites")
     fun getAllFavorites(): List<FavoriteCourseEntity>

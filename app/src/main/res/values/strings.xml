@@ -21,6 +21,8 @@
     <string name="price">%s ₽</string>
     <string name="more">Подробнее</string>
 
+    <string name="logout">Выйти из аккаунта</string>
+
     <string name="alexyndrik">Алешина Александра\nalexyndrik@gmail.com</string>
 
 </resources>

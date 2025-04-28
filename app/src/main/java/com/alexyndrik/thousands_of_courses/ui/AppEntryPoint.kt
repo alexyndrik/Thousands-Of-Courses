@@ -82,7 +82,15 @@ fun AppEntryPoint(
             ) {
                 composable(Screen.Home.route) { HomeScreen(coursesViewModel, favoritesViewModel) }
                 composable(Screen.Favorites.route) { FavoritesScreen(favoritesViewModel) }
-                composable(Screen.Account.route) { AccountScreen() }
+                composable(Screen.Account.route) {
+                    AccountScreen {
+                        CoroutineScope(Dispatchers.IO).launch {
+                            AppSettingsDataStore.saveAuthorizationState(context, false, "")
+                        }
+                        isAuthorized = false
+                        favoritesViewModel.clearFavorites()
+                    }
+                }
             }
         }
     }

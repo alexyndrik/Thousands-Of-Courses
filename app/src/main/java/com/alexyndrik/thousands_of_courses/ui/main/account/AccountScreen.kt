@@ -21,11 +21,14 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.alexyndrik.common.GreenButton
 import com.alexyndrik.thousands_of_courses.R
 import com.alexyndrik.thousands_of_courses.data.datastore.AppSettingsDataStore
 
 @Composable
-fun AccountScreen() {
+fun AccountScreen(
+    onLogout: () -> Unit
+) {
 
     val context = LocalContext.current
     var email: String by remember { mutableStateOf("") }
@@ -49,6 +52,10 @@ fun AccountScreen() {
             color = colorResource(com.alexyndrik.common.R.color.white),
             style = MaterialTheme.typography.headlineMedium
         )
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        GreenButton(text = R.string.logout, onClick = onLogout)
 
         Spacer(modifier = Modifier.weight(1f))
 

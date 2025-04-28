@@ -34,7 +34,7 @@ class FavoritesViewModel @Inject constructor(
             val id = course.id
             val isFav = favoritesDao.isFavorite(id)
             if (isFav) {
-                favoritesDao.removeFromFavorites(FavoriteCourseEntity(course))
+                favoritesDao.removeAllFromFavorites(FavoriteCourseEntity(course))
             } else {
                 favoritesDao.addToFavorites(FavoriteCourseEntity(course))
             }
@@ -44,5 +44,9 @@ class FavoritesViewModel @Inject constructor(
 
     fun isFavorite(course: Course): Boolean {
         return favoritesDao.isFavorite(course.id)
+    }
+
+    fun clearFavorites() {
+        viewModelScope.launch { favoritesDao.removeAllFromFavorites() }
     }
 }

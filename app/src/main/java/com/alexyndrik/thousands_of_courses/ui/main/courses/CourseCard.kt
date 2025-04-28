@@ -151,7 +151,7 @@ fun CourseCard(
                 Row {
 
                     Text(
-                        text = stringResource(com.alexyndrik.thousands_of_courses.R.string.price).format(course.price),
+                        text = stringResource(R.string.price).format(course.price),
                         color = colorResource(com.alexyndrik.common.R.color.white),
                         style = MaterialTheme.typography.titleMedium
                     )

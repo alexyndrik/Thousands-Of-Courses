@@ -4,10 +4,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.alexyndrik.thousands_of_courses.data.model.Course
 import com.alexyndrik.thousands_of_courses.data.database.FavoriteCourseDao
 import com.alexyndrik.thousands_of_courses.data.database.FavoriteCourseEntity
-import dagger.hilt.DefineComponent
+import com.alexyndrik.thousands_of_courses.data.model.Course
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

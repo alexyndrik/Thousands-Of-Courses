@@ -1,6 +1,5 @@
 package com.alexyndrik.thousands_of_courses.data.network
 
-import com.alexyndrik.thousands_of_courses.data.model.Course
 import com.alexyndrik.thousands_of_courses.data.model.Courses
 import retrofit2.http.GET
 

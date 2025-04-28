@@ -19,8 +19,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.alexyndrik.thousands_of_courses.R
 import com.alexyndrik.thousands_of_courses.data.database.FavoriteCourseEntity
-import com.alexyndrik.thousands_of_courses.data.model.Course
-import com.alexyndrik.thousands_of_courses.ui.main.courses.CoursesSection
 
 @Composable
 fun FavoritesScreen(

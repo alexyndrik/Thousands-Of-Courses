@@ -19,10 +19,6 @@ class FavoritesViewModel @Inject constructor(
     private val _favorites = MutableLiveData<List<FavoriteCourseEntity>>(emptyList())
     val favorites: LiveData<List<FavoriteCourseEntity>> = _favorites
 
-    init {
-        loadFavorites()
-    }
-
     fun loadFavorites() {
         viewModelScope.launch {
             _favorites.value = favoritesDao.getAllFavorites()

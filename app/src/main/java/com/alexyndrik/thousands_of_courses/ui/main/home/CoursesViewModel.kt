@@ -18,10 +18,6 @@ class CoursesViewModel @Inject constructor(
     private val _courses = MutableLiveData<List<Course>>()
     val courses: LiveData<List<Course>> get() = _courses
 
-    init {
-        loadCourses()
-    }
-
     fun loadCourses() {
         viewModelScope.launch {
             _courses.value = repository.loadCourses()

@@ -17,6 +17,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
@@ -33,6 +34,11 @@ fun HomeScreen(
     favoritesViewModel: FavoritesViewModel
 ) {
     val courses: List<Course> by coursesViewModel.courses.observeAsState(ArrayList())
+
+    LaunchedEffect(Unit) {
+        coursesViewModel.loadCourses()
+        favoritesViewModel.loadFavorites()
+    }
 
     Column(
         modifier = Modifier

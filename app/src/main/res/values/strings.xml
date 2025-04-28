@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Thousands Of Courses</string>
+
+    <string name="onboarding_title">Тысячи курсов в одном месте</string>
+    <string name="onboarding_continue">Продолжить</string>
+
+    <string name="login">Вход</string>
+    <string name="email">Email</string>
+    <string name="email_hint">example@gmail.com</string>
+    <string name="password">Пароль</string>
+    <string name="password_hint">Введите пароль</string>
+    <string name="no_account">Нету аккаунта?</string>
+    <string name="registration">Регистрация</string>
+    <string name="forget_password">Забыл пароль</string>
+
+    <string name="main">Главная</string>
+    <string name="favorites">Избранное</string>
+    <string name="account">Аккаунт</string>
+    <string name="search_courses">Search courses…</string>
+    <string name="by_date_add">По дате добавления</string>
+    <string name="price">%s ₽</string>
+    <string name="more">Подробнее</string>
+
+    <string name="alexyndrik">Алешина Александра\nalexyndrik@gmail.com</string>
+
+</resources>

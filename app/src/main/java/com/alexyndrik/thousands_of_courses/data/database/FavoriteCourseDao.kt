@@ -10,17 +10,17 @@ import androidx.room.Query
 interface FavoriteCourseDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun addToFavorites(course: FavoriteCourseEntity)
+    suspend fun addToFavorites(course: FavoriteCourseEntity)
 
     @Delete
-    fun removeAllFromFavorites(course: FavoriteCourseEntity)
+    suspend fun removeFromFavorites(course: FavoriteCourseEntity)
 
     @Query("DELETE FROM favorites")
-    fun removeAllFromFavorites()
+    suspend fun removeAllFromFavorites()
 
     @Query("SELECT * FROM favorites")
-    fun getAllFavorites(): List<FavoriteCourseEntity>
+    suspend fun getAllFavorites(): List<FavoriteCourseEntity>
 
     @Query("SELECT EXISTS(SELECT 1 FROM favorites WHERE id = :id)")
-    fun isFavorite(id: Int): Boolean
+    suspend fun isFavorite(id: Int): Boolean
 }

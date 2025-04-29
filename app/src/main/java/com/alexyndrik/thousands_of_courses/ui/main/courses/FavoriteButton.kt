@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.unit.dp
+import com.alexyndrik.thousands_of_courses.R
 
 @Composable
 fun FavoriteButton(
@@ -23,7 +24,7 @@ fun FavoriteButton(
     Surface(
         modifier = Modifier.padding(all = 8.dp),
         shape = RoundedCornerShape(20.dp),
-        color = colorResource(com.alexyndrik.common.R.color.glass)
+        color = colorResource(R.color.glass)
     ) {
 
         IconButton(
@@ -33,7 +34,7 @@ fun FavoriteButton(
             Icon(
                 imageVector = if (isFavorite) Icons.Default.Bookmark else Icons.Default.BookmarkBorder,
                 contentDescription = null,
-                tint = if (isFavorite) colorResource(com.alexyndrik.common.R.color.green) else colorResource(com.alexyndrik.common.R.color.white)
+                tint = if (isFavorite) colorResource(R.color.green) else colorResource(R.color.white)
             )
         }
 

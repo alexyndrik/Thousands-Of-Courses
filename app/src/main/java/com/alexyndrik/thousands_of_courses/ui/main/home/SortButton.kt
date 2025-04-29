@@ -29,7 +29,7 @@ fun SortButton(
 
         Text(
             text = stringResource(R.string.by_date_add),
-            color = colorResource(com.alexyndrik.common.R.color.green),
+            color = colorResource(R.color.green),
             textAlign = TextAlign.Right,
             style = MaterialTheme.typography.bodyMedium
         )
@@ -41,7 +41,7 @@ fun SortButton(
                 .align(Alignment.CenterVertically),
             imageVector = Icons.Default.SyncAlt,
             contentDescription = null,
-            tint = colorResource(com.alexyndrik.common.R.color.green)
+            tint = colorResource(R.color.green)
         )
 
     }

@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Thousands Of Courses"
 include(":app")
-include(":common")

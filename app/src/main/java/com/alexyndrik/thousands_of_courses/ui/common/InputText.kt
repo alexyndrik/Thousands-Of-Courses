@@ -1,4 +1,4 @@
-package com.alexyndrik.common
+package com.alexyndrik.thousands_of_courses.ui.common
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -15,6 +15,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.alexyndrik.thousands_of_courses.R
 
 @Composable
 fun InputText(

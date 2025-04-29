@@ -35,7 +35,7 @@ fun SearchBar(
         placeholder = {
             Text(
                 text = stringResource(R.string.search_courses),
-                color = colorResource(com.alexyndrik.common.R.color.white_50)
+                color = colorResource(R.color.white_50)
             )
         },
         leadingIcon = {
@@ -43,17 +43,17 @@ fun SearchBar(
                 modifier = Modifier.size(24.dp),
                 imageVector = Icons.Default.Search,
                 contentDescription = null,
-                tint = colorResource(com.alexyndrik.common.R.color.white)
+                tint = colorResource(R.color.white)
             )
         },
         shape = RoundedCornerShape(28.dp),
         colors = TextFieldDefaults.colors(
-            focusedContainerColor = colorResource(com.alexyndrik.common.R.color.dark_gray),
-            unfocusedContainerColor = colorResource(com.alexyndrik.common.R.color.dark_gray),
+            focusedContainerColor = colorResource(R.color.dark_gray),
+            unfocusedContainerColor = colorResource(R.color.dark_gray),
             focusedIndicatorColor = Color.Transparent,
             unfocusedIndicatorColor = Color.Transparent,
-            focusedTextColor = colorResource(com.alexyndrik.common.R.color.white),
-            unfocusedTextColor = colorResource(com.alexyndrik.common.R.color.white)
+            focusedTextColor = colorResource(R.color.white),
+            unfocusedTextColor = colorResource(R.color.white)
         )
     )
 

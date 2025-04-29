@@ -24,8 +24,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.alexyndrik.common.GreenButton
 import com.alexyndrik.thousands_of_courses.R
+import com.alexyndrik.thousands_of_courses.ui.common.GreenButton
 
 @Composable
 fun OnboardingScreen(
@@ -34,7 +34,7 @@ fun OnboardingScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(colorResource(id = com.alexyndrik.common.R.color.black))
+            .background(colorResource(id = R.color.black))
     ) {
         Spacer(Modifier.windowInsetsTopHeight(WindowInsets.systemBars))
         Spacer(modifier = Modifier.height(100.dp))
@@ -45,7 +45,7 @@ fun OnboardingScreen(
                 .width(296.dp)
                 .align(Alignment.CenterHorizontally),
             text = stringResource(id = R.string.onboarding_title),
-            color = colorResource(id = com.alexyndrik.common.R.color.white),
+            color = colorResource(id = R.color.white),
             textAlign = TextAlign.Center,
             fontSize = 28.sp
         )

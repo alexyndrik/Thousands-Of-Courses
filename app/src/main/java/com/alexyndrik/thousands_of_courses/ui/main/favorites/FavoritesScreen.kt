@@ -33,7 +33,7 @@ fun FavoritesScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = colorResource(com.alexyndrik.common.R.color.black))
+            .background(color = colorResource(R.color.black))
             .padding(horizontal = 16.dp)
             .verticalScroll(rememberScrollState())
     ) {
@@ -42,7 +42,7 @@ fun FavoritesScreen(
 
         Text(
             text = stringResource(R.string.favorites),
-            color = colorResource(com.alexyndrik.common.R.color.white),
+            color = colorResource(R.color.white),
             style = MaterialTheme.typography.titleLarge
         )
 

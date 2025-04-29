@@ -25,9 +25,9 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.alexyndrik.common.GreenButton
 import com.alexyndrik.thousands_of_courses.R
 import com.alexyndrik.thousands_of_courses.data.datastore.AppSettingsDataStore
+import com.alexyndrik.thousands_of_courses.ui.common.GreenButton
 
 @Composable
 fun AccountScreen(
@@ -44,7 +44,7 @@ fun AccountScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = colorResource(com.alexyndrik.common.R.color.black))
+            .background(color = colorResource(R.color.black))
             .padding(horizontal = 16.dp)
     ) {
         Spacer(Modifier.windowInsetsTopHeight(WindowInsets.systemBars))
@@ -53,7 +53,7 @@ fun AccountScreen(
         Text(
             modifier = Modifier.align(Alignment.CenterHorizontally),
             text = email,
-            color = colorResource(com.alexyndrik.common.R.color.white),
+            color = colorResource(R.color.white),
             style = MaterialTheme.typography.headlineMedium
         )
 
@@ -66,7 +66,7 @@ fun AccountScreen(
         Text(
             modifier = Modifier.align(Alignment.CenterHorizontally),
             text = stringResource(R.string.alexyndrik),
-            color = colorResource(com.alexyndrik.common.R.color.green),
+            color = colorResource(R.color.green),
             style = MaterialTheme.typography.bodyLarge,
             textAlign = TextAlign.Center
         )

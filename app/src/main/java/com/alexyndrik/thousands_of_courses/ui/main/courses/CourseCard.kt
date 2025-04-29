@@ -49,7 +49,7 @@ fun CourseCard(
     Surface(
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(16.dp),
-        color = colorResource(com.alexyndrik.common.R.color.dark_gray)
+        color = colorResource(R.color.dark_gray)
     ) {
 
         Column {
@@ -57,7 +57,7 @@ fun CourseCard(
             Surface(
                 modifier = Modifier.fillMaxWidth().height(114.dp),
                 shape = RoundedCornerShape(16.dp),
-                color = colorResource(com.alexyndrik.common.R.color.white_70)
+                color = colorResource(R.color.white_70)
             ) {
 
                 Column {
@@ -78,7 +78,7 @@ fun CourseCard(
 
                         Surface(
                             shape = RoundedCornerShape(12.dp),
-                            color = colorResource(com.alexyndrik.common.R.color.glass)
+                            color = colorResource(R.color.glass)
                         ) {
 
                             Row(
@@ -89,12 +89,12 @@ fun CourseCard(
                                     modifier = Modifier.size(12.dp),
                                     imageVector = Icons.Default.Star,
                                     contentDescription = null,
-                                    tint = colorResource(com.alexyndrik.common.R.color.green)
+                                    tint = colorResource(R.color.green)
                                 )
 
                                 Text(
                                     text = course.rate,
-                                    color = colorResource(com.alexyndrik.common.R.color.white),
+                                    color = colorResource(R.color.white),
                                     style = MaterialTheme.typography.bodySmall
                                 )
 
@@ -106,7 +106,7 @@ fun CourseCard(
 
                         Surface(
                             shape = RoundedCornerShape(12.dp),
-                            color = colorResource(com.alexyndrik.common.R.color.glass)
+                            color = colorResource(R.color.glass)
                         ) {
 
                             val dtf = DateTimeFormatter.ofPattern("d MMMM yyyy", Locale.forLanguageTag("ru-RU"))
@@ -114,7 +114,7 @@ fun CourseCard(
                             Text(
                                 modifier = Modifier.padding(vertical = 4.dp, horizontal = 6.dp),
                                 text = LocalDate.parse(course.startDate).format(dtf),
-                                color = colorResource(com.alexyndrik.common.R.color.white),
+                                color = colorResource(R.color.white),
                                 style = MaterialTheme.typography.bodySmall
                             )
 
@@ -132,7 +132,7 @@ fun CourseCard(
 
                 Text(
                     text = course.title,
-                    color = colorResource(com.alexyndrik.common.R.color.white),
+                    color = colorResource(R.color.white),
                     style = MaterialTheme.typography.titleMedium
                 )
 
@@ -140,7 +140,7 @@ fun CourseCard(
 
                 Text(
                     text = course.text,
-                    color = colorResource(com.alexyndrik.common.R.color.white_70),
+                    color = colorResource(R.color.white_70),
                     style = MaterialTheme.typography.bodySmall,
                     maxLines = 2,
                     overflow = TextOverflow.Ellipsis
@@ -152,7 +152,7 @@ fun CourseCard(
 
                     Text(
                         text = stringResource(R.string.price).format(course.price),
-                        color = colorResource(com.alexyndrik.common.R.color.white),
+                        color = colorResource(R.color.white),
                         style = MaterialTheme.typography.titleMedium
                     )
 
@@ -164,7 +164,7 @@ fun CourseCard(
 
                         Text(
                             text = stringResource(R.string.more),
-                            color = colorResource(com.alexyndrik.common.R.color.green),
+                            color = colorResource(R.color.green),
                             style = MaterialTheme.typography.bodySmall
                         )
 
@@ -174,7 +174,7 @@ fun CourseCard(
                                 .align(Alignment.CenterVertically),
                             imageVector = Icons.Default.ArrowRightAlt,
                             contentDescription = null,
-                            tint = colorResource(com.alexyndrik.common.R.color.green)
+                            tint = colorResource(R.color.green)
                         )
 
                     }

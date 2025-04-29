@@ -32,9 +32,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.alexyndrik.common.GreenButton
-import com.alexyndrik.common.InputText
 import com.alexyndrik.thousands_of_courses.R
+import com.alexyndrik.thousands_of_courses.ui.common.GreenButton
+import com.alexyndrik.thousands_of_courses.ui.common.InputText
 
 @Composable
 fun LoginScreen(
@@ -60,7 +60,7 @@ fun LoginScreen(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = colorResource(id = com.alexyndrik.common.R.color.black))
+            .background(color = colorResource(id = R.color.black))
     ) {
 
         Spacer(Modifier.windowInsetsTopHeight(WindowInsets.systemBars))
@@ -75,7 +75,7 @@ fun LoginScreen(
 
             Text(
                 text = stringResource(id = R.string.login),
-                color = colorResource(id = com.alexyndrik.common.R.color.white),
+                color = colorResource(id = R.color.white),
                 style = MaterialTheme.typography.headlineMedium
             )
 
@@ -124,7 +124,7 @@ fun LoginScreen(
 
                 Text(
                     text = stringResource(id = R.string.no_account),
-                    color = colorResource(id = com.alexyndrik.common.R.color.white),
+                    color = colorResource(id = R.color.white),
                     fontSize = 12.sp
                 )
 
@@ -132,7 +132,7 @@ fun LoginScreen(
 
                 Text(
                     text = stringResource(id = R.string.registration),
-                    color = colorResource(id = com.alexyndrik.common.R.color.green),
+                    color = colorResource(id = R.color.green),
                     fontSize = 12.sp
                 )
 
@@ -143,7 +143,7 @@ fun LoginScreen(
             Text(
                 modifier = Modifier.align(Alignment.CenterHorizontally),
                 text = stringResource(id = R.string.forget_password),
-                color = colorResource(id = com.alexyndrik.common.R.color.green),
+                color = colorResource(id = R.color.green),
                 fontSize = 12.sp
             )
 

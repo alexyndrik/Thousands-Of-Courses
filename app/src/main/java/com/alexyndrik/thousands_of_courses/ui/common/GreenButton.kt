@@ -1,4 +1,4 @@
-package com.alexyndrik.common
+package com.alexyndrik.thousands_of_courses.ui.common
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -11,6 +11,7 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.alexyndrik.thousands_of_courses.R
 
 @Composable
 fun GreenButton(

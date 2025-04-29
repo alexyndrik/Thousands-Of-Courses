@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.unit.dp
+import com.alexyndrik.thousands_of_courses.R
 
 @Composable
 fun FilterButton(
@@ -21,7 +22,7 @@ fun FilterButton(
     Surface(
         modifier = modifier.size(56.dp),
         shape = RoundedCornerShape(28.dp),
-        color = colorResource(com.alexyndrik.common.R.color.dark_gray)
+        color = colorResource(R.color.dark_gray)
     ) {
 
         IconButton(
@@ -31,7 +32,7 @@ fun FilterButton(
             Icon(
                 imageVector = Icons.Default.FilterAlt,
                 contentDescription = null,
-                tint = colorResource(com.alexyndrik.common.R.color.white)
+                tint = colorResource(R.color.white)
             )
 
         }

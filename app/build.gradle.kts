@@ -46,8 +46,6 @@ android {
 
 dependencies {
 
-    implementation(project(":common"))
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
     testImplementation(libs.junit)

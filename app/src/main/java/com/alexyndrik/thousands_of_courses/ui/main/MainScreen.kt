@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
+import com.alexyndrik.thousands_of_courses.R
 
 @Composable
 fun MainScreen(navController: NavController) {
@@ -20,8 +21,8 @@ fun MainScreen(navController: NavController) {
         modifier = Modifier
             .fillMaxWidth()
             .wrapContentHeight(),
-        containerColor = colorResource(com.alexyndrik.common.R.color.dark_gray),
-        contentColor = colorResource(com.alexyndrik.common.R.color.green)
+        containerColor = colorResource(R.color.dark_gray),
+        contentColor = colorResource(R.color.green)
     ) {
         val navBackStackEntry by navController.currentBackStackEntryAsState()
         val currentRoute = navBackStackEntry?.destination?.route
@@ -44,17 +45,17 @@ fun MainScreen(navController: NavController) {
                     Icon(
                         imageVector = if (currentRoute == screen.route) screen.selectedIcon else screen.icon,
                         contentDescription = null,
-                        tint = if (currentRoute == screen.route) colorResource(com.alexyndrik.common.R.color.green) else colorResource(com.alexyndrik.common.R.color.white)
+                        tint = if (currentRoute == screen.route) colorResource(R.color.green) else colorResource(R.color.white)
                     )
                 },
                 label = {
                     Text(
                         text = screen.label,
-                        color = if (currentRoute == screen.route) colorResource(com.alexyndrik.common.R.color.green) else colorResource(com.alexyndrik.common.R.color.white)
+                        color = if (currentRoute == screen.route) colorResource(R.color.green) else colorResource(R.color.white)
                     )
                 },
                 colors = NavigationBarItemDefaults.colors(
-                    indicatorColor = colorResource(com.alexyndrik.common.R.color.light_gray)
+                    indicatorColor = colorResource(R.color.light_gray)
                 )
             )
         }
